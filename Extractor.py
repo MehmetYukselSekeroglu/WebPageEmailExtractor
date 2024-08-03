@@ -355,7 +355,8 @@ def threadFunction(targetAddress, self_crawler:WebCrawler,self_targetList:list,s
     if len(emails_list["data_array"]) != 0:
         for element in emails_list["data_array"]:
             p_info(f"Found email: {element[1]} on {targetAddress}")
-
+    else:
+        p_warn(f"No email found: {targetAddress}")
 
 
 
